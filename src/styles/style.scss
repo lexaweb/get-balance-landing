@@ -1,0 +1,65 @@
+@import 'layouts/header';
+@import 'layouts/global';
+@import 'layouts/footer';
+
+body {
+  .wrapper {
+    .inner {
+      max-width: 1620px;
+      margin: 0 auto;
+      @include media-laptop {
+        max-width: 1024px;
+      }
+      section {
+        margin-top: 100px;
+        .head {
+          display: flex;
+          justify-content: center;
+          align-self: center;
+          font: 400 56px/1 $font;
+          color: $black;
+          text-align: center;
+          span {
+            display: inline-flex;
+            width: 90px;
+            height: 90px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px;
+            border: 3px solid $black;
+          }
+        }
+        .text {
+          display: flex;
+          width: 80%;
+          justify-content: center;
+          font: 400 26px/40px $font;
+          color: $black;
+          margin: 40px auto 0 auto;
+          a {
+            display: inline-block;
+            height: auto;
+            color: #29b1ff;
+            text-decoration: underline;
+            transition: 0.3s;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        .img-block {
+          display: flex;
+          justify-content: center;
+          margin-top: 70px;
+        }
+      }
+      section.section {
+        &-3 {
+          .text {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+mixin icon(iconName)
+  -mod = mod || ''
+    svg(class="icon " + iconName)
+      use(xlink:href="img/sprite.svg#" + iconName)
+
+mixin breadcrumbs( ...list)
+  .breadcrumbs
+    ul.breadcrumbs-block
+      each item, index in list
+        li.breadcrumbs-block-item
+          if index === list.length - 1
+            span=item
+          else
+            a.breadcrumbs-block-item-link(href="/")=item
+
+mixin pageTitle(pageTitle)
+  .page_title
+    h1=pageTitle
+
+mixin sectionTitle(sectionTitle)
+  .section_title
+    h2=sectionTitle
+
+mixin ui-checkbox(id, text)
+  .ui-checkbox
+    input(id=id type="checkbox" name=id)
+    label(for=id)=text
+
+mixin ui-select( ...data)
+  .ui-select
+    select
+      each item in data
+        option=item
