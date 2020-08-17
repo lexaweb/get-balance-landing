@@ -1,3 +1,92 @@
 @import '../mixins/media';
 
-// footer {}
+footer {
+  .inner {
+    .block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      border-top: 1px solid #d3d3d3;
+      padding: 40px 0;
+    .logo-footer {
+      a {
+        display: block;
+        svg {
+          width: 132px;
+          height: 36px;
+        }
+      }
+    }
+    .address {
+      width: 100%;
+      text-align: center;
+      margin-top: 25px;
+      a {
+        position: relative;
+        display: inline-block;
+        height: auto;
+        padding-right: 25px;
+        transition: 0.3s;
+        &:after {
+          position: absolute;
+          content: '';
+          top: 2px;
+          right: 0;
+          width: 12px;
+          height: 12px;
+          background: url('../img/svgs/icon_link_black.svg') no-repeat;
+          background-size: cover;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .email {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+      a {
+        display: inline-block;
+        height: auto;
+        transition: 0.3s;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .logo-glavstroy {
+      width: 100%;
+      text-align: center;
+      a {
+        display: inline-block;
+        svg {
+          width: 118px;
+          height: 24px;
+        }
+      }
+    }
+    .agreement {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+      a {
+        display: inline-block;
+        transition: 0.3s;
+        text-decoration: underline;
+      }
+    }
+    .privacy {
+      margin-top: 15px;
+      transition: 0.3s;
+      text-decoration: underline;
+    }
+    &:last-child {
+      width: 70%;
+      margin: 0 auto;
+      opacity: 0.5;
+    }
+  }
+}
+}

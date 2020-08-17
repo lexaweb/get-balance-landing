@@ -5,7 +5,8 @@ const gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   shorthand = require('gulp-shorthand'),
   rename = require('gulp-rename'),
-  cleanCSS = require('gulp-clean-css')
+  cleanCSS = require('gulp-clean-css'),
+  browsersync = require('browser-sync');
 
 module.exports = function styles() {
   return gulp.src('src/styles/*.scss')
@@ -31,4 +32,5 @@ module.exports = function styles() {
     }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('build/css'))
+    .pipe(browsersync.stream())
 }

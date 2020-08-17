@@ -12,6 +12,9 @@ body {
       }
       section {
         margin-top: 100px;
+        &:last-child {
+          margin-bottom: 150px;
+        }
         .head {
           display: flex;
           justify-content: center;
@@ -51,12 +54,72 @@ body {
           display: flex;
           justify-content: center;
           margin-top: 70px;
-        } 
+          margin-bottom: 40px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          img {
+            margin-right: 40px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+        .slider-scroll {
+          margin-top: 100px;
+          &-block {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 30px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+          &-img {
+            margin-right: 30px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+        .store {
+          text-align: center;
+          .link-store {
+            display: inline-block;
+            font: 700 24px $font;
+            color: $white;
+            border-radius: 10px;
+            background: #fe632d;
+            padding: 20px 55px 25px 55px;
+            margin-top: 60px;
+            border: 2px solid #fe632d;
+            transition: 0.5s;
+            &:hover {
+              color: #fe632d;
+              background: $white;
+            }
+          }
+        }
       }
       section.section {
-        &-3 {
+        &-3,
+        &-5 {
           .text {
             display: block;
+          }
+        }
+        &-5 {
+          .img-block {
+            margin-top: 0;
+            &:nth-child(3) {
+              margin-top: 70px;
+            }
+          }
+        }
+        &-7 {
+          .text {
+            text-align: center;
           }
         }
       }
