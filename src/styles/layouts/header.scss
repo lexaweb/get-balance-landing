@@ -2,29 +2,11 @@
 
 .header {
   position: relative;
-  height: 100vh;
-  min-height: 900px;
-  background: url('../img/image_1.jpg') 50% 0;
-  background-size: cover;
-  z-index: 1;
   padding-top: 50px;
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    min-height: 900px;
-    content: '';
-    background: #000;
-    z-index: -1;
-    opacity: 0.5;
-  }
-
+  z-index: 2;
   &-logo {
     width: 238px;
     height: 49px;
-    z-index: 1;
     a {
       display: block;
       svg {
@@ -32,17 +14,4 @@
       }
     }
   }
-  &-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $white;
-    text-align: center;
-    margin-top: 150px;
-    h1 {
-      font: 700 100px/1.5 $font;
-    }
-  }
-
-
 }
