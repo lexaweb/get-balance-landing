@@ -122,6 +122,39 @@ body {
             }
           }
         }
+        .skroll-animation-1 {
+          height: 1080px;
+          .img-block {
+            position: relative;
+            // display: flex;
+            // align-items: center;
+            // justify-content: flex-start;
+            height: auto;
+            .img-1 {
+              position: absolute;
+              width: 1080px;
+              height: auto;
+              z-index: 3;
+            }
+            .img-2 {
+              position: absolute;
+              width: 1080px;
+              height: auto;
+              z-index: 2;
+            }
+            .img-3 {
+              position: absolute;
+              width: 1080px;
+              height: auto;
+              z-index: 1;
+            }
+          }
+          .skrollable-between {
+            position: fixed;
+            top: 10%;
+            left: 0;
+          }
+        }
       }
       section.section {
         &-3,
@@ -147,6 +180,5 @@ body {
     }
   }
 }
-// top: 250px
-// width: 50%;
+// transform: perspective(0) rotateY(0deg);
 // transform: perspective(700px) rotateY(-30deg);
