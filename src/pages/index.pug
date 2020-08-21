@@ -20,20 +20,34 @@ block content
           | обозначают, где какое пространство. в кухне-гостиной с их помощью можно отделить столовую от зоны
           | отдыха. пока родители пьют вечерние чаи за столом, дети могут валяться на диване, смотреть телевизор,
           | читать или рисовать: даже если все занимаются своими делами, семья всё равно вместе.
-        .img-block.skroll-animation-1
-          .img-block
-            .img-1(data-top="transform: perspective(0) rotateY(0deg) scale(1);" data-bottom="transform: perspective(700px) rotateY(-30deg) scale(0.5);")
+        .skroll-animation-1
+          .img-block-animation-1
+            .img-1(data-top=" left: 0%; opacity: 1; transform: perspective(0) rotateY(0deg) scale(1);" data-bottom=" left: -30%; opacity: 0.7; transform: perspective(700px) rotateY(-30deg) scale(0.5);")
               img(src="img/image_2.jpg", alt="image_2.jpg")
-            .img-2(data-top="left: 20%; transform: perspective(0) rotateY(0deg) scale(1);" data-bottom="left: 0; transform: perspective(700px) rotateY(-30deg) scale(0.5);")
-              img(src="img/image_3_2.jpg", alt="image_2.jpg")
-            .img-3(data-top="left: 40%; transform: perspective(0) rotateY(0deg) scale(1);" data-bottom="left: 0; transform: perspective(700px) rotateY(-30deg) scale(0.5);")
+            .img-2(data-top=" left: 0%; opacity: 1; transform: perspective(0) rotateY(0deg) scale(1);" data-bottom=" left: 0%; opacity: 0.7; transform: perspective(700px) rotateY(-30deg) scale(0.5);")
+              img(src="img/image_2_2.jpg", alt="image_2.jpg")
+            .img-3(data-top=" left: 0%; opacity: 1; transform: perspective(0) rotateY(0deg) scale(1);" data-bottom=" left: 20%; opacity: 0.7; transform: perspective(700px) rotateY(-30deg) scale(0.5);")
               img(src="img/image_4.jpg", alt="image_2.jpg")
       section.section-2
         .head
           span 2
           | цветы на полу
-        .img-block
-          img(src="img/image_3.jpg", alt="image_2.jpg")
+        .skroll-animation-2
+          .img-block-animation-2
+            .animation-1(data--500-top="width: 100%; top: 500px;" data-bottom="width: 50%; top: 0px;")
+              img(src="img/image_5.png", alt="image_3.jpg")
+              .animation-2(data-top="opacity: 0.7;" data-bottom="opacity: 0;")
+            .animation-3(data-center="opacity: 1; bottom: 0%;" data-bottom="opacity: 0; bottom: -30%;")
+              .head
+                span 2
+                | цветы на полу
+              .text
+                | если ты отчаялся вырастить цветы, потому что они постоянно
+                | умирают, скорее всего, дело не в тебе (если, конечно, ты их хотя бы
+                | когда-то поливал). в московских квартирах им часто не хватает света.
+                | но если у тебя большие окна, например, с французским балконом,
+                | можно попробовать завести деревце в кадке — это самый простой
+                | способ оживить интерьер.
       section.section-3
         .head
           span 3
