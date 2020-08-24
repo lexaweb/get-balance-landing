@@ -102,6 +102,9 @@ body {
             &:last-child {
               margin-right: 0;
             }
+            img {
+              max-width: none;
+            }
           }
         }
         .store {
@@ -160,13 +163,13 @@ body {
           }
         }
         .skroll-animation-2 {
+          height: 1500px;
           margin-top: 70px;
           margin-bottom: 40px;
           .img-block-animation-2 {
             position: relative;
             display: flex;
-            height: 2000px;
-            // height: auto;
+            height: auto;
             justify-content: center;
             align-items: center;
             .animation-1 {
@@ -187,10 +190,6 @@ body {
                 z-index: -1;
               }
             }
-            // .animation-1.skrollable-between {
-            //   position: fixed;
-            //   top: 10%;
-            // }
             .animation-3 {
               position: absolute;
               display: flex;
@@ -214,9 +213,6 @@ body {
                 color: $white;
               }
             }
-            // .animation-3.skrollable-between {
-            //   position: fixed;
-            // }
           }
         }
       }
@@ -225,6 +221,15 @@ body {
         &-5 {
           .text {
             display: block;
+          }
+        }
+        &-4 {
+          .img-block {
+            img {
+              &:last-child {
+                z-index: -1;
+              }
+            }
           }
         }
         &-5 {

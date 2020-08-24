@@ -37,7 +37,7 @@ block content
             .animation-1(data--500-top="width: 100%; top: 500px;" data-bottom="width: 50%; top: 0px;")
               img(src="img/image_5.png", alt="image_3.jpg")
               .animation-2(data-top="opacity: 0.7;" data-bottom="opacity: 0;")
-            .animation-3(data-center="opacity: 1; bottom: 0%;" data-bottom="opacity: 0; bottom: -30%;")
+            .animation-3(data--500-top="opacity: 1; top: 50%;" data-bottom="opacity: 0; top: 100%;")
               .head
                 span 2
                 | цветы на полу
@@ -60,7 +60,9 @@ block content
           | . усталыми вечерами здесь хорошо бездумно сидеть перед
           | панорамой заката с бокалом в руках.
         .slider-scroll
-          .slider-scroll-block
+          .slider-scroll-block(data--500-top="transform: translate3d(-1500px, 0px, 0px);" data-bottom="transform: translate3d(-800px, 0px, 0px);")
+            .slider-scroll-img
+              img(src="img/image_11.jpg", alt="image_4.jpg")
             .slider-scroll-img
               img(src="img/image_10.jpg", alt="image_4.jpg")
             .slider-scroll-img
@@ -69,13 +71,21 @@ block content
               img(src="img/image_8.jpg", alt="image_4.jpg")
             .slider-scroll-img
               img(src="img/image_7.jpg", alt="image_4.jpg")
-          .slider-scroll-block
+            .slider-scroll-img
+              img(src="img/image_6.jpg", alt="image_4.jpg")
+          .slider-scroll-block(data-top="transform: translate3d(0px, 0px, 0px);" data-500-bottom="transform: translate3d(-500px, 0px, 0px);")
+            .slider-scroll-img
+              img(src="img/image_12.jpg", alt="image_4.jpg")
             .slider-scroll-img
               img(src="img/image_13.jpg", alt="image_4.jpg")
             .slider-scroll-img
               img(src="img/image_14.jpg", alt="image_4.jpg")
             .slider-scroll-img
               img(src="img/image_15.jpg", alt="image_4.jpg")
+            .slider-scroll-img
+              img(src="img/image_16.jpg", alt="image_4.jpg")
+            .slider-scroll-img
+              img(src="img/image_17.jpg", alt="image_4.jpg")
       section.section-4
         .head
           span 4
@@ -86,8 +96,8 @@ block content
           | во-первых, сам вид гантелей напомнит о том, какие у тебя будут железные мускулы через несколько
           | месяцев. во-вторых, заниматься перед окном с видом приятнее, чем уткнувшись в стенку.
         .img-block
-           img(src="img/image_18.jpg", alt="image_4.jpg")
-           img(src="img/image_18.jpg", alt="image_4.jpg")
+          img(src="img/image_18.jpg", alt="image_4.jpg" data-top="transform: translate3d(50%, 0px, 0px) scale(1.2); margin-right: 0px;" data-bottom="transform: translate3d(0%, 0px, 0px) scale(1); margin-right: 40px;")
+          img(src="img/image_19.jpg", alt="image_4.jpg" data-top="transform: translate3d(-50%, 0px, 0px);" data-bottom="transform: translate3d(0%, 0px, 0px);")
       section.section-5
         .head
           span 5
@@ -101,20 +111,34 @@ block content
           a(href="/") с базовой светлой отделкой
           | — ты всегда сможешь быстро что-то поменять, если захочется новизны.
         .img-block
-          img(src="img/image_20.jpg", alt="image_4.jpg")
-          img(src="img/image_21.jpg", alt="image_4.jpg")
+          img(src="img/image_20.jpg", alt="image_4.jpg" data-200-top="opacity: 1; transform: translate3d(0px, 0px ,0px);" data-bottom="opacity: 0; transform: translate3d(0px, 100px, 0px);")
+          img(src="img/image_21.jpg", alt="image_4.jpg" data-top="opacity: 1; transform: translate3d(0px, 0px ,0px);" data-bottom="opacity: 0; transform: translate3d(0px, 100px, 0px);")
         .img-block
-          img(src="img/image_22.jpg", alt="image_4.jpg")
-          img(src="img/image_23.jpg", alt="image_4.jpg")
+          img(src="img/image_22.jpg", alt="image_4.jpg" data-200-top="opacity: 1; transform: translate3d(0px, 0px ,0px);" data-bottom="opacity: 0; transform: translate3d(0px, 100px, 0px);")
+          img(src="img/image_23.jpg", alt="image_4.jpg" data-top="opacity: 1; transform: translate3d(0px, 0px ,0px);" data-bottom="opacity: 0; transform: translate3d(0px, 100px, 0px);")
         .img-block
-          img(src="img/image_24.jpg", alt="image_4.jpg")
-          img(src="img/image_25.jpg", alt="image_4.jpg")
+          img(src="img/image_24.jpg", alt="image_4.jpg" data-200-top="opacity: 1; transform: translate3d(0px, 0px ,0px);" data-bottom="opacity: 0; transform: translate3d(0px, 100px, 0px);")
+          img(src="img/image_25.jpg", alt="image_4.jpg" data-top="opacity: 1; transform: translate3d(0px, 0px ,0px);" data-bottom="opacity: 0; transform: translate3d(0px, 100px, 0px);")
       section.section-6
         .head
           span 6
           | проектор
-        .img-block
-          img(src="img/image_26.jpg", alt="image_4.jpg")
+        .skroll-animation-2
+          .img-block-animation-2
+            .animation-1(data--500-top="width: 100%; top: 500px;" data-bottom="width: 50%; top: 0px;")
+              img(src="img/image_26.png", alt="image_3.jpg")
+              .animation-2(data-top="opacity: 0.7;" data-bottom="opacity: 0;")
+            .animation-3(data--500-top="opacity: 1; top: 50%;" data-bottom="opacity: 0; top: 100%;")
+              .head
+                span 6
+                | проектор
+              .text
+                | иногда друзья приходят в гости и мы проводим полвечера, уткнувшись в ютуб на
+                | чьем-то телефоне. но гораздо более качественное совместное
+                | времяпрепровождение — смотреть новые сериалы на проекторе, вытянув ноги
+                | на диване и хрустя попкорном. вообще отмечается, что частота приходов друзей
+                | в гости с появлением проектора увеличивается: все рвутся смотреть кино на
+                | большом экране.
       section.section-7
         .head
           span 7
