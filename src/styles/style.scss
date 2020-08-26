@@ -5,13 +5,14 @@
 body {
   .wrapper {
     .top-block {
+      position: absolute;
+      top: 0;
       width: 100%;
       height: 100vh;
-      min-height: 900px;
+      min-height: 812px;
       background: url('../img/image_1.jpg') 50% 0;
       background-size: cover;
       z-index: 1;
-      margin-top: -249px;
       &-text {
         display: flex;
         height: 100%;
@@ -22,14 +23,29 @@ body {
         margin-top: 150px;
         h1 {
           font: 700 100px/1.2 $font;
+          @include media-laptop {
+            font-size: calc(3.1vw + 2.5rem);
+          }
+          @include media-mobile {
+            font-size: 50px;
+          }
         }
       }
     }
     .inner {
       max-width: 1620px;
       margin: 0 auto;
+      @include media-laptop-plus {
+        max-width: 1366px;
+      }
       @include media-laptop {
         max-width: 1024px;
+      }
+      @include media-tablet-horizontal {
+        max-width: 768px;
+      }
+      @include media-tablet {
+        max-width: 90%;
       }
       section {
         margin-top: 100px;
@@ -218,8 +234,7 @@ body {
         .skroll-animation-3.img-1 {
           height: 600px;
           background: url('../img/image_27.jpg') no-repeat center;
-          background-size: cover;
-          background-size: auto 640px;
+          background-size: auto 680px;
           background-position: center;
           background-repeat: no-repeat;
           margin-top: 80px;
@@ -227,14 +242,16 @@ body {
         .skroll-animation-3.img-2 {
           height: 600px;
           background: url('../img/image_28.jpg') no-repeat center;
-          background-size: cover;
-          background-size: auto 640px;
+          background-size: auto 680px;
           background-position: center;
           background-repeat: no-repeat;
           margin-top: 80px;
         }
       }
       section.section {
+        &-1 {
+          margin-top: 100vh;
+        }
         &-3,
         &-5 {
           .text {
@@ -267,5 +284,3 @@ body {
     }
   }
 }
-// transform: perspective(0) rotateY(0deg);
-// transform: perspective(700px) rotateY(-30deg);
