@@ -78,49 +78,49 @@ function initAdjustWindow() {
   };
 }
 
-enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
+enquire.register( initAdjustWindow(), false);
 
-skrollr.init();
+// skrollr.init();
 
-// Setup variables
-$window = $(window);
-$slide = $('.homeSlide');
-$body = $('body');
+// // Setup variables
+// $window = $(window);
+// $slide = $('.homeSlide');
+// $body = $('body');
 
-  //FadeIn all sections
-$body.imagesLoaded( function() {
-  setTimeout(function() {
+//   //FadeIn all sections
+// $body.imagesLoaded( function() {
+//   setTimeout(function() {
 
-        // Resize sections
-        adjustWindow();
+//         // Resize sections
+//         adjustWindow();
 
-        // Fade in sections
-      $body.removeClass('loading').addClass('loaded');
+//         // Fade in sections
+//       $body.removeClass('loading').addClass('loaded');
 
-  }, 800);
-});
+//   }, 800);
+// });
 
-function adjustWindow(){
+// function adjustWindow(){
 
-  // Init Skrollr
-  var s = skrollr.init({
-      forceHeight: false
-  });
+//   // Init Skrollr
+//   var s = skrollr.init({
+//       forceHeight: false
+//   });
 
-  // Get window size
-    winH = $window.height();
+//   // Get window size
+//     winH = $window.height();
 
-    // Keep minimum height 550
-    if(winH <= 550) {
-    winH = 550;
-  }
+//     // Keep minimum height 550
+//     if(winH <= 550) {
+//     winH = 550;
+//   }
 
-    // Resize our slides
-    $slide.height(winH);
+//     // Resize our slides
+//     $slide.height(winH);
 
-    // Refresh Skrollr after resizing our sections
-    s.refresh($('.homeSlide'));
+//     // Refresh Skrollr after resizing our sections
+//     s.refresh($('.homeSlide'));
 
-}
+// }
 
 });
